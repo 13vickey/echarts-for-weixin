@@ -9,8 +9,10 @@
 	},
 	"compileType": "miniprogram",
 	"libVersion": "2.0.0",
-	"appid": "wxee40007e9b62f5d0",
+	"appid": "wxb9eb32e25717fc51",
 	"projectname": "ECharts%20Demo",
+	"simulatorType": "wechat",
+	"simulatorPluginLibVersion": {},
 	"condition": {
 		"search": {
 			"current": -1,

@@ -60,17 +60,18 @@
 其中 `ec` 是一个我们在 `index.js` 中定义的对象，它使得图表能够在页面加载后被初始化并设置。`index.js` 的结构如下：
 
 ```js
-function initChart(canvas, width, height) {
+function initChart(canvas, width, height, dpr) {
   const chart = echarts.init(canvas, null, {
-    width: width,
-    height: height
+    width: width, // 画布的宽度
+    height: height, // 画布的高度
+    devicePixelRatio: dpr || wx.getSystemInfoSync().pixelRatio  // 画布的高度
   });
   canvas.setChart(chart);
 
   var option = {
     ...
   };
-  chart.setOption(option);
+  chart.setOption(option);  // 传递数据
   return chart;
 }
 
